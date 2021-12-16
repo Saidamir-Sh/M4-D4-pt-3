@@ -11,6 +11,7 @@ class SingleBook extends React.Component {
 
     render() {
         return (
+            <>
             <Card
                 onClick={() => {
                     this.setState({ commentArea : !this.state.commentArea})
@@ -22,10 +23,11 @@ class SingleBook extends React.Component {
                 <Card.Body>
                     <Card.Title style={{ color: 'black' }}>{this.props.book.title}</Card.Title>
                 </Card.Body>
-                {
-                    this.state.commentArea && <CommentArea />
-                }
             </Card>
+             {
+                this.state.commentArea && <CommentArea />
+            }
+            </>
         )
     }
 
