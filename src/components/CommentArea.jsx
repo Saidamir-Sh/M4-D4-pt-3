@@ -42,7 +42,7 @@ class CommentArea extends Component {
         })
     }
 
-    componentDidMount = async () => {
+    componentDidUpdate = async () => {
          this.fetchComments()
         
     }

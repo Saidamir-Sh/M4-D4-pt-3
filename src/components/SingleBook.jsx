@@ -14,9 +14,11 @@ class SingleBook extends React.Component {
             <>
             <Card key={this.props.book.asin}
                 onClick={() => {
-                    this.setState({ commentArea : !this.state.commentArea})
+                    this.setState({ commentArea : this.props.book.title})
                     this.setState({ selected: !this.state.selected })
-                    console.log(this.props.book.asin)
+                    console.log(this.props.book)
+                    console.log(this.state)
+                    
                 }}
                 style={{ border: this.state.selected ? '3px solid red' : 'none' }}
             >
