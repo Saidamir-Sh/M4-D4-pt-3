@@ -50,7 +50,7 @@ class CommentArea extends Component {
 
   render() {
     return (
-      <div className="CommentArea my-2">
+      <div className="CommentArea my-2 position-fixed" style={{width: '40%'}}>
         <Form onSubmit={(e) => this.handleSubmit(e)}>
           <Form.Group controlId="comment">
             <Form.Control 
